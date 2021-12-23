@@ -30,7 +30,7 @@ def encode_auth_header() -> json:
 
 
     if DEBUG:
-        print(f"Encoded string: {base64_string}")
+        print(f"base64_encoded string: {base64_string}")
 
     # Authorization URL give us an AUTH_TOKEN
     header = {"Content-Type": "application/json; charset=utf-8", "Authorization": "Basic {}".format(base64_string)}
